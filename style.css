@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+}
+
+.contenu{
+    margin: auto;
+    width: 630px;
+    height: 630px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.case{
+    background-color: rgb(199, 228, 199);
+    color: rgb(255, 255, 255);
+    margin: 5px;
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.croix{
+    color: red;
+    font-size: 100px;
+}
+
+.rond{
+    color: green;
+    font-size: 80px;
+}
