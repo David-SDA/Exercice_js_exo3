@@ -3,12 +3,14 @@ const texteTour = document.querySelector(".tourJoueur");
 
 let joueurActuel = "✗"; // ou ◯
 let nombreTotalTour = 0;
+let etatJeu = ["", "", "", "", "", "", "", "", ""];
 
 const caseDeJeu = document.createElement("div");
 caseDeJeu.classList.add("case");
 
 for(i = 0; i < 9; i++){
     let nouvCase = caseDeJeu.cloneNode();
+    nouvCase.id = i+1;
     contenu.appendChild(nouvCase);
     nouvCase.addEventListener("click", function(){
         if(joueurActuel === "✗"){
@@ -21,6 +23,7 @@ for(i = 0; i < 9; i++){
                 joueurActuel = "◯";
                 texteTour.innerHTML = "◯";
                 nombreTotalTour++;
+                console.log(etatJeu);
                 if(nombreTotalTour == 9){
                     setTimeout(function(){
                         alert("Partie terminée !");
