@@ -2,6 +2,7 @@ const contenu = document.querySelector(".contenu");
 const texteTour = document.querySelector(".tourJoueur");
 
 let joueurActuel = "✗"; // ou ◯
+let nombreTotalTour = 0;
 
 const caseDeJeu = document.createElement("div");
 caseDeJeu.classList.add("case");
@@ -19,6 +20,12 @@ for(i = 0; i < 9; i++){
                 nouvCase.style.cursor = "not-allowed";
                 joueurActuel = "◯";
                 texteTour.innerHTML = "◯";
+                nombreTotalTour++;
+                if(nombreTotalTour == 9){
+                    setTimeout(function(){
+                        alert("Partie terminée !");
+                    }, 100);
+                }
             }
             
         }
@@ -31,6 +38,12 @@ for(i = 0; i < 9; i++){
                 nouvCase.style.cursor = "not-allowed";
                 joueurActuel = "✗";
                 texteTour.innerHTML = "✗";
+                nombreTotalTour++;
+                if(nombreTotalTour == 9){
+                    setTimeout(function(){
+                        alert("Partie Terminée !");
+                    }, 100);
+                }
             }
         }
     })
