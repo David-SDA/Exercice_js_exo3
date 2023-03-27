@@ -11,7 +11,7 @@ body{
 .contenu{
     margin: auto;
     width: 630px;
-    height: 630px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +21,7 @@ body{
 .case{
     background-color: rgb(199, 228, 199);
     color: rgb(255, 255, 255);
-    margin: 5px;
+    margin: 2.5px;
     height: 200px;
     width: 200px;
     border-radius: 5px;
