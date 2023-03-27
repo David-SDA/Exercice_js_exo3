@@ -1,4 +1,5 @@
 const contenu = document.querySelector(".contenu");
+const texteTour = document.querySelector(".tourJoueur");
 
 let joueurActuel = "✗"; // ou ◯
 
@@ -15,6 +16,7 @@ for(i = 0; i < 9; i++){
             croix.classList.add("croix");
             croix.innerHTML = "✗";
             joueurActuel = "◯";
+            texteTour.innerHTML = "◯";
         }
         else{
             let rond = document.createElement("span");
@@ -22,6 +24,7 @@ for(i = 0; i < 9; i++){
             rond.classList.add("rond");
             rond.innerHTML = "◯";
             joueurActuel = "✗";
+            texteTour.innerHTML = "✗";
         }
     })
 }
