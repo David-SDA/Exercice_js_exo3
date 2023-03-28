@@ -45,12 +45,17 @@ for(i = 0; i < 9; i++){
                     setTimeout(function(){
                         alert("Le joueur ✗ a gagné !");
                     }, 100);
-                    
+                    setTimeout(function(){
+                        window.location.reload();
+                    }, 1000);
                 }
                 if(nombreTotalTour == 9){
                     setTimeout(function(){
                         alert("Partie terminée !");
                     }, 100);
+                    setTimeout(function(){
+                        window.location.reload();
+                    }, 1000);
                 }
             }
             
@@ -71,11 +76,17 @@ for(i = 0; i < 9; i++){
                     setTimeout(function(){
                         alert("Le joueur ◯ a gagné !");
                     }, 100);
+                    setTimeout(function(){
+                        window.location.reload();
+                    }, 1000);
                 }
                 if(nombreTotalTour == 9){
                     setTimeout(function(){
                         alert("Partie Terminée !");
                     }, 100);
+                    setTimeout(function(){
+                        window.location.reload();
+                    }, 1000);
                 }
             }
         }
